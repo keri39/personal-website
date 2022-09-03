@@ -1,6 +1,8 @@
 # Abhishek Keri Personal Website
 This website is published as a part of an assignment at my university: [University of Nebraska at Omaha](https://www.unomaha.edu/) for a course called [Web Application Development](https://catalog.unomaha.edu/search/?P=ISQA%203900). 
 
+[Link to the published website](https://keri39.github.io/personal-website/)
+
 <img width="1438" alt="Screen Shot 2022-09-03 at 9 48 15 AM" src="https://user-images.githubusercontent.com/111935093/188276988-134e9525-b5ad-4d27-b9a3-e9419482dd42.png">
 
 Total Number of pages -4 : 
