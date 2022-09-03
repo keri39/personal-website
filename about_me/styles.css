@@ -1,0 +1,137 @@
+/* removing all margins */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* setting wrapper height to the whole screen */
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+/* z index: -1 will keep the image behind the text when we scroll down */
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+/* background will move little slower than the text  */
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+/* setting the position and keeping the background at the back */
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 6rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  z-index: -1;
+  position: absolute;
+  text-align: center;
+}
+
+/* giving scroll image position in all directions */
+.scroll {
+  display: flex;
+  transform-style: preserve-3d;
+  z-index: -1;
+  position: absolute;
+  text-align: center;
+  top: 900px;
+}
+
+/* making scroll image move slower when we scroll down */
+.scroll {
+  transform: translateZ(-10px) scale(2);
+}
+
+/* making the title text stay at one point and move slower */
+.title {
+  transform: translateZ(-10px) scale(2);
+}
+
+/* setting up the background and sizes for text */
+section {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  /* padding: 1rem; */
+  text-align: justify;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  border-top: 10%;
+}
+
+/* making image insert into a circle and giving it shadow for floating effect */
+.my_img {
+  height: 40%;
+  width: 40%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  margin: 6% 30%;
+  justify-content: center;
+}
+
+/* giving white background for the whole text */
+.txt {
+  padding: 0 4%;
+  background-color: white;
+}
+/* p {
+  padding-left: 4%;
+  padding-right: 4%;
+} */
+
+/* different font for signature */
+.signature {
+  font-family: "Amorisa Free", sans-serif;
+  padding-left: 4%;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+/* setting up the background and rounded corners for home button */
+.home {
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: none;
+  color: #ffff;
+  background-image: linear-gradient(to right, #6253e1, #852d91);
+  /* box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75); */
+  border-radius: 30px;
+  padding: 8px 30px;
+}
+
+/* transformation effect for the button */
+.button:hover {
+  transform: translateY(-0.25em);
+}
+
+/* box shadow is given for the home div as it contains the button */
+.home:hover {
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
