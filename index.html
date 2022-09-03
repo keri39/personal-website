@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- link to google font: Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header and for typing effect -->
+    <div class="typing">
+      <h1>Hi, I am Abhishek Keri.</h1>
+      <h1>Welcome to my Webpage.</h1>
+    </div>
+    <main>
+      <!-- main container where individual boxes will be placed -->
+      <section class="container">
+        <!-- data tilt is used for tilting effect from javascript -->
+        <div class="box" data-tilt>
+          <h2 class="name">ABOUT ME</h2>
+          <!-- this image has a separate class because its dimensions are different -->
+          <img class="image1" src="images/boy-dynamic-gradient.png" />
+          <a href="about_me/Index.html" class="click">Click Me</a>
+        </div>
+        <div class="box" data-tilt>
+          <h2 class="name">TECHNICAL <br />SKILLS</h2>
+          <img class="image" src="images/setting-dynamic-gradient.png" />
+          <a href="technical/index.html" class="click">Click Me</a>
+        </div>
+        <div class="box" data-tilt>
+          <h2 class="name">CONTACT ME</h2>
+          <img class="image" src="images/at-dynamic-gradient.png" />
+          <a href="contact/index.html" class="click">Click Me</a>
+        </div>
+      </section>
+      <!-- tilt effect from javascript which is linked to this page -->
+      <script src="vanilla-tilt.min.js"></script>
+    </main>
+  </body>
+</html>

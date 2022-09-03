@@ -1,0 +1,194 @@
+/* removing all the margins and padding throughout the webpage */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* styling the entire background */
+body {
+  margin: 0;
+  /* background: linear-gradient(-45deg, #351dbb, #835ee8, #e68d97, #ecc075); */
+  background: linear-gradient(-45deg, #351dbb, #835ee8);
+  background-size: 400% 400%;
+  /* animation: gradient 15s ease infinite; */
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+} */
+
+/* overflow hidden is to hide text until animated, border right is for the cursor color */
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  border-right: 0.15em solid orange;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* setting typing speeds for two lines */
+
+.typing h1:nth-child(1) {
+  font-style: italic;
+  margin-top: 3%;
+  width: 10.5em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+.typing h1:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 12em;
+  opacity: 0;
+  animation: type2 2s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* typing animation for two lines */
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  90% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+/* setting up the three cards/boxes */
+.container {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+}
+
+.box {
+  position: relative;
+  flex: 0 0 240px;
+  height: 320px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px 3px rgba(0, 0, 0, 0.5);
+  margin: 6% 5%;
+  transform-style: preserve-3d;
+}
+
+/* z index gives the position at the 3-d z axis */
+.name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  color: #000;
+  transform-style: preserve-3d;
+  transform: translate3d(55px, 25px, 75px);
+  transition: 0.5s;
+  z-index: 10;
+}
+
+/* hover effect */
+.box:hover .name {
+  opacity: 1;
+  /* text-align: center;
+    margin-top: 5%;
+    transition-delay: 0.2s;
+    transition-duration: 0.4s; */
+}
+
+/* styling the click me box */
+.click {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translate3d(65px, 250px, 75px);
+  color: #fff;
+  background-image: linear-gradient(to right, #6253e1, #852d91);
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.box:hover .click {
+  opacity: 1;
+}
+
+/* higher z index to make it stand out in front */
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 50%;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+.image1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 55%;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+/* adding hover effect to the image */
+.box:hover .image {
+  transform: translate3d(-50%, -50%, 100px);
+}
+
+.box:hover .image1 {
+  transform: translate3d(-50%, -50%, 100px);
+}
+
+/* to make the boxes responsive to both phone and ipad */
+@media screen and (max-width: 480px) {
+  h1 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  h1 {
+    margin-top: 60px;
+  }
+}
