@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* naming a variable and giving it the scope for the entire page, hence the root element */
+:root {
+  --container-height: 100vh;
+}
+
+body {
+  background: linear-gradient(-45deg, #351dbb, #835ee8);
+  background-size: 400% 400%;
+}
+
+/* h1 {
+  font-weight: 700;
+  padding: 2%;
+  background-image: linear-gradient(to right, #6253e1, #852d91);
+  color: #ffff;
+  text-align: center;
+} */
+
+/* setting up properties of title and the cursor */
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  border-right: 0.15em solid orange;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* giving animation effect for the font */
+h1 {
+  font-style: italic;
+  margin-top: 3%;
+  width: 7.5em;
+  animation: type 2s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+/* giving animation for both font and cursor */
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  90% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+/* the overflow at x is hidden so that the icons moves vertically */
+main {
+  height: var(--container-height);
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  padding: 0 3%;
+}
+
+/* giving the first half of the page to the first container */
+.container {
+  height: 50%;
+}
+
+/* spacing between the icons */
+.container,
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* second half of the page to the second container */
+.container2 {
+  height: 50%;
+  align-items: flex-end;
+}
+
+/* giving the animation effect to the whole image container first and then different speeds to different images */
+img {
+  position: relative;
+  animation-name: float;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.img1 {
+  animation-duration: 10s;
+}
+
+.img2 {
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.img3 {
+  animation-delay: 1s;
+  animation-duration: 8s;
+}
+
+.img4 {
+  animation-delay: 3s;
+  animation-duration: 13s;
+}
+
+.img5 {
+  animation-delay: 1s;
+  animation-duration: 9s;
+}
+
+@keyframes float {
+  0% {
+    top: calc((var(--container-height) / -1));
+  }
+  100% {
+    top: calc(var(--container-height));
+  }
+}
+
+/* making the home button at the footer fixed */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 1.5%;
+  text-align: center;
+}
+.home {
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  padding: 12px 30px;
+  background-color: white;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* .home:hover {
+  background-image: linear-gradient(to right, #6253e1, #852d91);
+  color: white;
+} */
