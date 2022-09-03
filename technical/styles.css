@@ -14,14 +14,6 @@ body {
   background-size: 400% 400%;
 }
 
-/* h1 {
-  font-weight: 700;
-  padding: 2%;
-  background-image: linear-gradient(to right, #6253e1, #852d91);
-  color: #ffff;
-  text-align: center;
-} */
-
 /* setting up properties of title and the cursor */
 h1 {
   margin: 0 auto;
@@ -145,8 +137,3 @@ footer {
   background-color: white;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-/* .home:hover {
-  background-image: linear-gradient(to right, #6253e1, #852d91);
-  color: white;
-} */

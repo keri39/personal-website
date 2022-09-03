@@ -23,16 +23,6 @@ form {
   margin: 20px auto;
 }
 
-/* input,
-textarea {
-  border: 0;
-  outline: 0;
-  border-radius: (8px);
-  display: block;
-  width: 100%;
-  margin-top: 3em;
-} */
-
 /* keeping all the input forms at center */
 div {
   text-align: center;

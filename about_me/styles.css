@@ -73,7 +73,6 @@ section {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  /* padding: 1rem; */
   text-align: justify;
   justify-content: center;
 }
@@ -98,10 +97,6 @@ h2 {
   padding: 0 4%;
   background-color: white;
 }
-/* p {
-  padding-left: 4%;
-  padding-right: 4%;
-} */
 
 /* different font for signature */
 .signature {
