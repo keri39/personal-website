@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* keeping the background and text color for header */
+h1 {
+  padding: 1em;
+  text-align: center;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #6253e1, #852d91);
+  color: #ffff;
+}
+
+/* giving spacing inside the form */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* input,
+textarea {
+  border: 0;
+  outline: 0;
+  border-radius: (8px);
+  display: block;
+  width: 100%;
+  margin-top: 3em;
+} */
+
+/* keeping all the input forms at center */
+div {
+  text-align: center;
+  padding: 1em;
+}
+
+/* setting up the input box with shadow behind it */
+input {
+  border: 0;
+  outline: 0;
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+/* giving extra space and a bigger box for message */
+textarea {
+  border: 0;
+  outline: 0;
+  background-color: #ffff;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.submit_btn {
+  width: 20%;
+  cursor: pointer;
+  border-bottom: 5%;
+}
+
+/* button color changes on hovering */
+.submit_btn:hover {
+  color: #ffff;
+  background-image: linear-gradient(to right, #6253e1, #852d91);
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+/* footer properties */
+h2 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  font-weight: 300;
+  background-image: linear-gradient(to right, #6253e1, #852d91);
+  color: #ffff;
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
+/* making a linkedIn button to link it up tp external website */
+.In {
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* keeping the home button at bottom right */
+.home {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0.5% 2%;
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
